@@ -1,0 +1,14 @@
+{
+  "name": "cdn.sup39.dev",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/sup39/cdn.sup39.dev",
+  "author": "sup39 <dev@sup39.dev>",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "sass --no-source-map --style compressed src/css/index.sass docs/css/index.css"
+  },
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}

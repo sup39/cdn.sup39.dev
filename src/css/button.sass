@@ -1,0 +1,48 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2022 sup39
+
+main
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"]
+    color: var(--fg)
+    background: #2a8
+    border: #2a8 1px solid
+    border-radius: 4px
+    font-size: 14px
+    cursor: pointer
+
+    &:hover
+      border: #197 1px solid
+      background: #197
+    &:active
+      border: #075 1px solid
+      background: #075
+    &:disabled
+      background: #444
+      border: #555 1px solid
+      cursor: not-allowed
+
+  &[variant="warning"]:enabled
+    background: #c87603
+    border: #c87603 1px solid
+    &:hover
+      background: #b60
+      border: #b60 1px solid
+    &:active
+      background: #a50
+      border: #b60 1px solid
+
+  &[variant="danger"]:enabled
+    background: #c32
+    border: #c32 1px solid
+    &:hover
+      background: #b21
+      border: #b21 1px solid
+    &:active
+      background: #a10
+      border: #b21 1px solid
+
+  &.sm
+    font-size: 12px
